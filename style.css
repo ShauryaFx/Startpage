@@ -1,0 +1,133 @@
+:root {
+  --color-bg: #16161D;
+  --color-fg: #C3B5BF;
+  --color-link: #8E7886;
+  --color-link-visited: #E73DE1;
+  --color-link-hover: #8E7886;
+}
+
+html, body {
+  background: var(--color-bg);
+  color: var(--color-fg);
+  font-family: "Space Mono", monospace; /* Update font family here */
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5));
+  z-index: -1;
+}
+
+.right-container {
+  text-align: center;
+  z-index: 1; /* Ensure content is above the blurred background */
+}
+
+.head {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.bookmarks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.category {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(11, 5, 8, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+  width: 200px;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+li {
+  font-size: 16px;
+  list-style-type: none;
+  padding: 5px;
+}
+
+a:link {
+  text-decoration: none;
+  color: var(--color-link);
+}
+
+a:visited {
+  color: var(--color-link-visited);
+}
+
+a:hover {
+  color: var(--color-link-hover);
+}
+
+.blinking {
+  animation: opacity 1s ease-in-out infinite;
+  opacity: 1;
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+.search-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.search-box {
+  width: 300px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  color: var(--color-fg);
+  font-family: "Space Mono", monospace; /* Update font family here */
+  font-size: 16px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Optional box shadow for depth */
+  backdrop-filter: blur(5px); /* Blur effect for the background */
+}
