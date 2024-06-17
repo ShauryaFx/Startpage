@@ -6,7 +6,7 @@ A startpage with the following :
   Weather
   Search Box
   
-GH-Pages : 
+Preview [GH-Pages](https://shauryafx.github.io/Startpage/)
 
 Fonts Used : 
   [Space Mono](https://fonts.google.com/specimen/Space+Mono)
