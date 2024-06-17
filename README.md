@@ -1,12 +1,15 @@
 # Startpage
 
-[Live Preview](https://kencx.github.io/startpage/)
+A startpage with the following :
+  Containerized Bookmarks
+  Date, Day and Time
+  Weather
+  Search Box
+  
+GH-Pages : 
 
-Feel free to fork and make your own changes!
+Fonts Used : 
+  [Space Mono](https://fonts.google.com/specimen/Space+Mono)
 
-- Font: Fira Code
-- Colorscheme: Gruvbox Dark
-- Cat Gif: [Here](https://twitter.com/avogado6/status/1165595520967954432?s=19)
-
-![startpage](startpage.gif)
-
+API USED
+  [WEATHERAPI](https://weatherapi.com)
